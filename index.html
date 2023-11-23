@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie park</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.ico">
+    <!-- SCRIPT AND STYLES LINKS -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/597061bca4.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body >
+  <header>
+    <nav class="navbar navbar-expand-md bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+        <div class="container-xxl">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-film me-2"></i>MOVIE PARK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="d-flex">
+        <video class="w-100"  autoplay muted loop id="headerVideo">
+          <source src="video/headerVideo.mp4" type="video/mp4" width="100%">
+        </video>
+      </div>
+  </header>
+  
+  <section id="main">
+    <div class="container-xxl py-4">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+          <h2>Сегодня в кино / <span class="text-secondary">Скоро на экранах</span></h2>
+        <div class="container text-center" id="movieCards">
+          <div class="row">
+            <div class="col-md">
+              <div class="movieCard">
+                <img class="w-100" src="img/movie1.webp" alt="">
+                <h3 class="movieName">Заветное желание</h3>
+                <h4 class="movieTags">мультфильм, музыка, фэнтези, комедия, приключения</h4>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="movieCard">
+                <img class="w-100" src="img/movie2.webp" alt="">
+                <h3 class="movieName">Арғымақ. Небесные кони</h3>
+                <h4 class="movieTags">спорт, мелодрама</h4>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="movieCard">
+                <img class="w-100" src="img/movie3.webp" alt="">
+                <h3 class="movieName">Тор</h3>
+                <h4 class="movieTags">триллер</h4>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="movieCard">
+                <img class="w-100" src="img/movie4.webp" alt="">
+                <h3 class="movieName">Голодные игры: Баллада о змеях и певчих птицах</h3>
+                <h4 class="movieTags">фантастика, боевик, триллер, драма, военный</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md">
+              <div class="movieCard">
+                <img class="w-100" src="img/movie5.webp" alt="">
+                <h3 class="movieName">Капитан Марвел 2</h3>
+                <h4 class="movieTags">фэнтези, боевик, приключения</h4>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="movieCard">
+                <img class="w-100" src="img/movie6.webp" alt="">
+                <h3 class="movieName">Принцесса и колдун Алазар</h3>
+                <h4 class="movieTags">фэнтези, комедия, семейный</h4>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="movieCard">
+                <img class="w-100" src="img/movie7.webp" alt="">
+                <h3 class="movieName">Наполеон</h3>
+                <h4 class="movieTags">биографический, военный, драма, исторический</h4>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="movieCard">
+                <img class="w-100" src="img/movie8.webp" alt="">
+                <h3 class="movieName">Супермозг</h3>
+                <h4 class="movieTags">мультфильм, приключения</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

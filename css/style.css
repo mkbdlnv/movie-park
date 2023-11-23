@@ -1,0 +1,30 @@
+.movieCard{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.movieCard .movieName{
+    align-self: start;
+    font-size: 15px;
+    margin: 10px 0;
+    text-align: start;
+}
+
+.movieCard .movieTags{
+    align-self: start;
+    color:gray;
+    font-size: 15px;
+    text-align: start;
+
+}
+
+.movieCard img{
+    height: 30vw;
+}
+
+@media only screen and (max-width: 767px) {
+    .movieCard img{
+        height: 100vw;
+    }
+  }
