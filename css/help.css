@@ -1,0 +1,42 @@
+body {
+    background-image: url('../img/help.jpg');
+}
+.container {
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+h2 {
+    color:white;
+}
+
+.form-group {
+    color: white;
+}
+
+footer{
+    font-size: 15px;
+}
+
+footer a{
+    color: white;
+}
+
+.fa-brands{
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.topButton{
+    font-size: 20px;
+    position: fixed;
+    bottom: 60px;
+    left: 20px;
+}
+
+.topButton button {
+    border: none;
+    background-color: #212529;
+    color: white;
+    border-radius: 50%;
+}

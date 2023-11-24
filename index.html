@@ -30,13 +30,13 @@
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/puzzle.html">Puzzle</a>
+                <a class="nav-link" href="puzzle.html">Puzzle</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/facts.html">Facts</a>
+                <a class="nav-link" href="facts.html">Facts</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="food.html">Food</a>
               </li>
             </ul>
           </div>
@@ -54,35 +54,35 @@
   <section id="main">
     <div class="container-xxl py-4">
       <div class="d-flex flex-column justify-content-center align-items-center">
-          <h2>Сегодня в кино / <span class="text-secondary">Скоро на экранах</span></h2>
+          <h2>Today at the cinema / <span class="text-secondary">Coming soon on screens</span></h2>
         <div class="container text-center" id="movieCards" >
           <div class="row">
             <div class="col-md">
               <div class="movieCard" data-movie-id="1">
                 <img class="w-100" src="img/movie1.webp" alt="">
-                <h3 class="movieName">Заветное желание</h3>
-                <h4 class="movieTags">мультфильм, музыка, фэнтези, комедия, приключения</h4>
+                <h3 class="movieName">A cherished wish</h3>
+                <h4 class="movieTags">cartoon, music, fantasy, comedy, adventure</h4>
               </div>
             </div>
             <div class="col-md">
               <div class="movieCard " data-movie-id="2">
                 <img class="w-100" src="img/movie2.webp" alt="">
                 <h3 class="movieName">Арғымақ. Небесные кони</h3>
-                <h4 class="movieTags">спорт, мелодрама</h4>
+                <h4 class="movieTags">sports, romance</h4>
               </div>
             </div>
             <div class="col-md">
               <div class="movieCard" data-movie-id="3">
                 <img class="w-100" src="img/movie3.webp" alt="">
-                <h3 class="movieName">Тор</h3>
-                <h4 class="movieTags">триллер</h4>
+                <h3 class="movieName">Thor</h3>
+                <h4 class="movieTags">thriller</h4>
               </div>
             </div>
             <div class="col-md">
               <div class="movieCard" data-movie-id="4">
                 <img class="w-100" src="img/movie4.webp" alt="">
-                <h3 class="movieName">Голодные игры: Баллада о змеях и певчих птицах</h3>
-                <h4 class="movieTags">фантастика, боевик, триллер, драма, военный</h4>
+                <h3 class="movieName">The Hunger Games: The Ballad of Snakes and Songbirds</h3>
+                <h4 class="movieTags">science fiction, action, thriller, drama, military</h4>
               </div>
             </div>
           </div>
@@ -91,29 +91,29 @@
             <div class="col-md">
               <div class="movieCard" data-movie-id="5">
                 <img class="w-100" src="img/movie5.webp" alt="">
-                <h3 class="movieName">Капитан Марвел 2</h3>
-                <h4 class="movieTags">фэнтези, боевик, приключения</h4>
+                <h3 class="movieName">Captain Marvel 2</h3>
+                <h4 class="movieTags">fantasy, action, adventure</h4>
               </div>
             </div>
             <div class="col-md">
               <div class="movieCard" data-movie-id="6">
                 <img class="w-100" src="img/movie6.webp" alt="">
-                <h3 class="movieName">Принцесса и колдун Алазар</h3>
-                <h4 class="movieTags">фэнтези, комедия, семейный</h4>
+                <h3 class="movieName">The Princess and the sorcerer Alazar</h3>
+                <h4 class="movieTags">fantasy, comedy, family</h4>
               </div>
             </div>
             <div class="col-md">
               <div class="movieCard" data-movie-id="7">
                 <img class="w-100" src="img/movie7.webp" alt="">
-                <h3 class="movieName">Наполеон</h3>
-                <h4 class="movieTags">биографический, военный, драма, исторический</h4>
+                <h3 class="movieName">Napoleon</h3>
+                <h4 class="movieTags">biographical, military, drama, historical</h4>
               </div>
             </div>
             <div class="col-md">
               <div class="movieCard" data-movie-id="8">
                 <img class="w-100" src="img/movie8.webp" alt="">
-                <h3 class="movieName">Супермозг</h3>
-                <h4 class="movieTags">мультфильм, приключения</h4>
+                <h3 class="movieName">Superbrain</h3>
+                <h4 class="movieTags">cartoon, adventure</h4>
               </div>
             </div>
           </div>
@@ -121,6 +121,17 @@
       </div>
     </div>
   </section>
+
+  <!-- Кнопка открытия всплывающего окна чата -->
+  <button id="open-chat-button" onclick="toggleChat()"><i class="fa-solid fa-comment"></i></button>
+
+  <!-- Всплывающее окно чата -->
+  <div id="chat-popup">
+    <h2>Чат</h2>
+    <input type="text" id="messageInput" placeholder="Введите сообщение">
+    <button onclick="sendMessage()">Отправить</button>
+    <button onclick="toggleChat()">Закрыть</button>
+  </div>
 
   <!-- Footer  -->
   <footer class="d-flex bg-dark justify-content-between px-5 py-3">
@@ -160,7 +171,8 @@
       
     </div>
   </div>
-</div>
+</div> 
+  <script src="js/popwindow.js"></script>
   <script src="js/topButton.js"></script>
   <script src="js/modalBox.js"></script>
   <script src="js/audio.js"></script>

@@ -1,4 +1,4 @@
-.first-content {
+body {
     background-image: url('../img/main.jpg');
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
@@ -6,23 +6,42 @@
     height: 100vh;
 }
 
+.first-content{
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
 h1 {
     color: white;
+    text-align: center;
+    font-size: 70px;
+    padding-bottom: 50px;
 }
 
-#carousel-3 h5 {
-    background-color: rgba(0, 0, 0, 0.4);
+#carousel-5 h5 {
+    background-color: black;
+}
+
+#carousel-5 p {
+    background-color: black;
+}
+
+p {
+    background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
 }
 
-#carousel-3 p {
-    background-color: rgba(0, 0, 0, 0.4);
+h5 {
+    background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
 }
+
 
 .list-group-item {
+    text-align: center;
     color: white;
     background-color: rgba(129, 155, 192, 0);
+    font-size: 40px;
 }
 
 .list-group-item:hover {
@@ -63,4 +82,56 @@ footer a{
     background-color: #212529;
     color: white;
     border-radius: 50%;
+}
+
+
+
+/* Стили для всплывающего окна чата */
+#chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    padding: 10px;
+}
+
+#chat-popup input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#chat-popup button {
+    background-color: #212529;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#chat-popup button:hover {
+    opacity: 0.8;
+}
+
+/* Стили для кнопки "Открыть чат" */
+#open-chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #212529;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#open-chat-button:hover {
+    opacity: 0.8;
 }

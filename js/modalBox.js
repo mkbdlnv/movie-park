@@ -13,104 +13,104 @@ class Movie {
 
 const movie1 = new Movie ({
     id:1,
-    name:"Заветное желание", 
-    tags:["мультфильм", "музыка", "фэнтези", "комедия", "приключения"], 
+    name:"A cherished wish", 
+    tags:["cartoon", "music", "fantasy", "comedy", "adventure"], 
     duration:"90", 
     country:"USA", 
     trailerLink:
     "https://www.youtube.com/embed/OKSLmjLs6hw?controls=0",
     imgLink:"img/movie1.webp",
-    desciption: "Аша — остроумная идеалистка, которая загадывает настолько сильное желание, что на него отвечает космическая сила — маленький шарик безграничной энергии по имени Звезда. Вместе, Аша и Звезда противостоят самому грозному врагу — правителю Росаса, королю Магнифико. Защищая своих близких, Аша доказывает, что, когда воля одного отважного человека соединяется с магией звезд, могут происходить удивительные вещи."
+    desciption: "Asha is a witty idealist who makes such a strong wish that it is answered by a cosmic force — a small ball of boundless energy named a Star. Together, Asha and the Star confront the most formidable enemy — the ruler of Rosas, King Magnifico. Protecting her loved ones, Asha proves that when the will of one brave person is combined with the magic of the stars, amazing things can happen."
 
 }) 
 
 const movie2 = new Movie ({
     id:2,
     name:"Арғымақ. Небесные кони", 
-    tags:["спорт", "мелодрама"], 
+    tags:["sport", "melodrama"], 
     duration:"125", 
     country:"Kazkhstan", 
     trailerLink:
     "https://www.youtube.com/embed/t2L6XYCm7aU?controls=0",
     imgLink:"img/movie2.webp",
-    desciption: "Главный герой 50-летний неудачник Мухтар. Мухтар получил сильную, психологическую травму в детстве. Его родной брат играл за знаменитый футбольный клуб «Пахтакор», но, к большому сожалению, погиб в авикатострофе со всей командой в далеком 1979-м году. После этой трагедии, Мухтар возненавидел футбол и потерял себя... Спустя сорок лет по иронии судьбы ради спасения своего друга ему приходится стать тренером детского футбольного клуба…"
+    desciption: "The main character is a 50-year-old loser Mukhtar. Mukhtar received a strong psychological trauma in childhood. His brother played for the famous football club 'Pakhtakor', but, unfortunately, he died in a plane crash with the whole team back in 1979. After this tragedy, Mukhtar hated football and lost himself... Forty years later, ironically, in order to save his friend, he has to become a coach of a children's football club…"
 }) 
 
 const movie3 = new Movie ({
     id:3,
-    name:"Тор", 
-    tags:["триллер"], 
+    name:"Thor", 
+    tags:["thriller"], 
     duration:"90", 
     country:"Kazakhstan", 
     trailerLink:
     "https://www.youtube.com/embed/BQ0oF6cUzXw?controls=0",
     imgLink:"img/movie3.webp",
-    desciption: "Человек попадает в изолятор максимальной безопасности. Он не помнит, что произошло, и какие действия привели его в тюрьму. В камере он встречает заключённого, который соглашается помочь ему восстановить цепь событий. Однажды его сокамерник бесследно исчезает. Он старается наладить связь с надзирателем и узнать, что произошло. Удастся ли ему докопаться до истины? Поиски ответов затрудняет строгий режим изолятора и отсутствие связи с внешним миром."
+    desciption: "A person ends up in a maximum security isolation unit. He does not remember what happened and what actions led him to prison. In the cell, he meets a prisoner who agrees to help him restore the chain of events. One day his cellmate disappears without a trace. He tries to establish contact with the warden and find out what happened. Will he be able to get to the truth? The search for answers is complicated by the strict regime of the isolation ward and the lack of communication with the outside world."
 
 }) 
 
 const movie4 = new Movie ({
     id:4,
-    name:"Голодные игры: Баллада о змеях и певчих птицах", 
-    tags:["фантастика", "боевик", "триллер", "драма", "военный"], 
+    name:"The Hunger Games: The Ballad of Snakes and Songbirds", 
+    tags:["fantasy", "action movie", "thriller", "drama", "military"], 
     duration:"160", 
     country:"USA", 
     trailerLink:
     "https://www.youtube.com/embed/BSLQBhWCNqI?controls=0",
     imgLink:"img/movie4.webp",
-    desciption: "До того, как стать деспотичным президентом Панэма, молодой Кориолан Сноу был последней надеждой для своего увядающего рода — некогда великой династии, впавшей в немилость послевоенного Капитолия. Накануне десятых ежегодных Голодных игр Сноу назначают наставником Люси Грей Бэйрд — трибута дистрикта 12. Постепенно девушка привлекает все больше внимание Панэма, становясь фавориткой грядущего соревнования. Готовый на все, чтобы вернуть своей семье былое величие, Сноу решает обратить ситуацию с Люси в свою пользу. Начинается гонка со временем, которая покажет, кто певчая птица, а кто — змея."
+    desciption: "Before becoming the despotic president of Panam, the young Coriolanus Snow was the last hope for his withering family—the once great dynasty that fell out of favor with the post-war Capitol. On the eve of the tenth annual Hunger Games, Snow is appointed mentor to Lucy Gray Baird, a tributary of District 12. Gradually, the girl attracts more and more attention of Panem, becoming the favorite of the upcoming competition. Ready to do anything to restore his family to its former greatness, Snow decides to turn the situation with Lucy to his advantage. A race against time begins, which will show who is a songbird and who is a snake."
 
 }) 
 
 const movie5 = new Movie ({
     id:5,
-    name:"Капитан Марвел 2", 
-    tags:["фэнтези", "боевик", "приключения"], 
+    name:"Captain Marvel 2", 
+    tags:["fantasy", "action movie", "adventure"], 
     duration:"110", 
     country:"USA", 
     trailerLink:
     "https://www.youtube.com/embed/9gg3tiXBA9M?controls=0",
     imgLink:"img/movie5.webp",
-    desciption:"Кэрол Дэнверс обретает свою утраченную личность, отнятую тиранами Крии, и мстит Высшему Разуму. Однако, непредвиденные последствия приводят к тому, что Кэрол взваливает на свои плечи бремя дестабилизированной вселенной. Когда она проходит через червоточину, которая должна вывести её на революционера из числа Крии, её силы переплетаются со способностями суперфанатки из Джерси-Сити, Камалы Хан, известной как Мисс Марвел, а также с племянницей Кэрол, Моникой Рамбо (агентом организации «М. Е. Ч.»). Они должны объединиться и научиться действовать сообща, чтобы спасти вселенную."
+    desciption:"Carol Danvers regains her lost identity, taken away by the tyrants of the Kree, and takes revenge on the Higher Mind. However, unforeseen consequences lead to Carol shouldering the burden of a destabilized universe. When she passes through a wormhole that should lead her to a Kree revolutionary, her powers are intertwined with the abilities of a Jersey City superfan, Kamala Khan, known as Miss Marvel, as well as with Carol's niece, Monica Rambo (an agent of the M.E.C. organization). They must unite and learn to act together to save the universe."
 
 }) 
 
 const movie6 = new Movie ({
     id: 6,
-    name:"Принцесса и колдун Алазар", 
-    tags:["фэнтези", "комедия", "семейный"], 
+    name:"The Princess and the sorcerer Alazar", 
+    tags:["fantasy", "comedy", "famyli"], 
     duration:"140", 
     country:"Czech", 
     trailerLink:
     "https://www.youtube.com/embed/ola4HYTgV5c?controls=0",
     imgLink:"img/movie6.webp",
-    desciption: "Принцесса Эллен и принц Джон живут, как и положено, долго и счастливо, но у подруги Эллен Амелии забот хватает. Помимо того, что она серьезно увлеклась магией, у нее еще и появляется двойник — Амелия из прошлого. А тут еще и злой колдун объявился, который угрожает волшебному городу Айра."
+    desciption: "Princess Ellen and Prince John live happily ever after, as they should, but Ellen's friend Amelia has enough worries. In addition to the fact that she is seriously interested in magic, she also has a double — Amelia from the past. And then an evil sorcerer has appeared, who threatens the magical city of Ira."
 
 }) 
 
 const movie7 = new Movie ({
     id:7,
-    name:"Наполеон  ", 
-    tags:["биографический", "военный", "драма", "исторический"], 
+    name:"Napoleon", 
+    tags:["biographical", "military", "drama", "historical"], 
     duration:"160", 
     country:"UK, USA", 
     trailerLink:
     "https://www.youtube.com/embed/vEBzNxPeXAU?controls=0",
     imgLink:"img/movie7.webp",
-    desciption: "«Наполеон» — зрелищный эпический боевик, в котором подробно рассказывается о взлёте и падении легендарного французского императора Наполеона Бонапарта (лауреат премии «Оскар» Хоакин Феникс). Понастоящему масштабный фильм легендарного Ридли Скотта показывает тяжёлый путь Бонапарта к власти через призму его изменчивых отношений с единственной настоящей любовью,"
+    desciption: "«Napoleon» is a spectacular epic action movie that tells in detail about the rise and fall of the legendary French emperor Napoleon Bonaparte (Oscar winner Joaquin Phoenix). A truly large-scale film by the legendary Ridley Scott shows Bonaparte's difficult path to power through the prism of his volatile relationship with his only true love,"
 
 }) 
 
 const movie8 = new Movie ({
     id:8,
-    name:"Супермозг", 
-    tags:["мультфильм", "приключения"], 
+    name:"Superbrain", 
+    tags:["cartoon", "adventure"], 
     duration:"90", 
     country:"South Africa", 
     trailerLink:
     "https://www.youtube.com/embed/E3pPN1Y6Mc8?controls=0",
     imgLink:"img/movie8.webp",
-    desciption: "Норман — обычный школьник, увлеченный комиксами про пришельцев и верящий в существование внеземных цивилизаций. Однажды его фантазии становятся реальностью, когда группа инопланетян подключается к его голове и просит о помощи. Межгалактический злодей Супермозг ищет новые источники разума, и его следующая цель — планета Земля. Норману и его друзьям предстоит включить голову и переиграть Супермозга. Ведь сразиться им придется со злодеем-гением."
+    desciption: "Norman is an ordinary schoolboy who is passionate about comics about aliens and believes in the existence of extraterrestrial civilizations. One day his fantasies become reality when a group of aliens connects to his head and asks for help. The intergalactic villain Superbrain is looking for new sources of intelligence, and his next target is planet Earth. Norman and his friends will have to turn on the head and beat the Superbrain. After all, they will have to fight with a genius villain."
 
 }) 
 

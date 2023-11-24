@@ -1,7 +1,3 @@
-nav{
-    
-}
-
 .movieCard{
     display: flex;
     flex-direction: column;
@@ -110,3 +106,53 @@ footer a{
         width: 75vw;
        }
   }
+
+  /* Стили для всплывающего окна чата */
+#chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    padding: 10px;
+}
+
+#chat-popup input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#chat-popup button {
+    background-color: #212529;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#chat-popup button:hover {
+    opacity: 0.8;
+}
+
+/* Стили для кнопки "Открыть чат" */
+#open-chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #212529;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#open-chat-button:hover {
+    opacity: 0.8;
+}

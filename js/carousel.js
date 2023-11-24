@@ -1,4 +1,3 @@
-// script.js
 var carouselLinks = document.querySelectorAll('.carousel-link');
 
 carouselLinks.forEach(function(link) {
