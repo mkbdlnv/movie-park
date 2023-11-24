@@ -1,7 +1,15 @@
+nav{
+    
+}
+
 .movieCard{
     display: flex;
     flex-direction: column;
     margin: 15px 0;
+}
+
+.movieCard:hover{
+    cursor: pointer;
 }
 
 .movieCard .movieName{
@@ -50,12 +58,55 @@ footer a{
     border-radius: 50%;
 }
 
-.modal-box{
-    
+
+#movieInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+#modalBox .movieCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#modalBox{
+    background-color: aliceblue;
+    position: fixed;
+    top: 10%;
+    left: 8.5%;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    border-radius: 2%;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+
 
 @media only screen and (max-width: 767px) {
     .movieCard img{
         height: 100vw;
     }
+  }
+
+  @media only screen and (max-width: 803px) {
+       #trailer{
+        width: 75vw;
+       }
   }
