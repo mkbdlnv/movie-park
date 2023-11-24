@@ -32,7 +32,7 @@ window.onload = function(){
 
     for(let i=0;i<pieces.length;i++){
         let pieceImg = document.createElement("img");
-        pieceImg.src = "/img/puzzles/puzzle1/pieces/"+pieces[i]+".png";
+        pieceImg.src = "img/puzzles/puzzle1/pieces/"+pieces[i]+".png";
         
 
         pieceImg.addEventListener("dragstart", onDragStart);
