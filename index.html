@@ -8,16 +8,18 @@
     <!-- SCRIPT AND STYLES LINKS -->
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/597061bca4.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body >
+
+  <!-- Navbar  -->
   <header>
-    <nav class="navbar navbar-expand-md bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
-        <div class="container-xxl">
+    <nav class="navbar navbar-expand-md bg-dark border-bottom border-body z-1 fixed-top" data-bs-theme="dark">
+        <div class="container-xxl ">
           <a class="navbar-brand" href="#"><i class="fa-solid fa-film me-2"></i>MOVIE PARK</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,36 +53,38 @@
         </video>
       </div>
   </header>
+
   
+  <!-- Movie cards -->
   <section id="main">
     <div class="container-xxl py-4">
       <div class="d-flex flex-column justify-content-center align-items-center">
           <h2>Сегодня в кино / <span class="text-secondary">Скоро на экранах</span></h2>
-        <div class="container text-center" id="movieCards">
+        <div class="container text-center" id="movieCards" >
           <div class="row">
             <div class="col-md">
-              <div class="movieCard">
+              <div class="movieCard" data-movie-id="1">
                 <img class="w-100" src="img/movie1.webp" alt="">
                 <h3 class="movieName">Заветное желание</h3>
                 <h4 class="movieTags">мультфильм, музыка, фэнтези, комедия, приключения</h4>
               </div>
             </div>
             <div class="col-md">
-              <div class="movieCard">
+              <div class="movieCard " data-movie-id="2">
                 <img class="w-100" src="img/movie2.webp" alt="">
                 <h3 class="movieName">Арғымақ. Небесные кони</h3>
                 <h4 class="movieTags">спорт, мелодрама</h4>
               </div>
             </div>
             <div class="col-md">
-              <div class="movieCard">
+              <div class="movieCard" data-movie-id="3">
                 <img class="w-100" src="img/movie3.webp" alt="">
                 <h3 class="movieName">Тор</h3>
                 <h4 class="movieTags">триллер</h4>
               </div>
             </div>
             <div class="col-md">
-              <div class="movieCard">
+              <div class="movieCard" data-movie-id="4">
                 <img class="w-100" src="img/movie4.webp" alt="">
                 <h3 class="movieName">Голодные игры: Баллада о змеях и певчих птицах</h3>
                 <h4 class="movieTags">фантастика, боевик, триллер, драма, военный</h4>
@@ -90,28 +94,28 @@
 
           <div class="row">
             <div class="col-md">
-              <div class="movieCard">
+              <div class="movieCard" data-movie-id="5">
                 <img class="w-100" src="img/movie5.webp" alt="">
                 <h3 class="movieName">Капитан Марвел 2</h3>
                 <h4 class="movieTags">фэнтези, боевик, приключения</h4>
               </div>
             </div>
             <div class="col-md">
-              <div class="movieCard">
+              <div class="movieCard" data-movie-id="6">
                 <img class="w-100" src="img/movie6.webp" alt="">
                 <h3 class="movieName">Принцесса и колдун Алазар</h3>
                 <h4 class="movieTags">фэнтези, комедия, семейный</h4>
               </div>
             </div>
             <div class="col-md">
-              <div class="movieCard">
+              <div class="movieCard" data-movie-id="7">
                 <img class="w-100" src="img/movie7.webp" alt="">
                 <h3 class="movieName">Наполеон</h3>
                 <h4 class="movieTags">биографический, военный, драма, исторический</h4>
               </div>
             </div>
             <div class="col-md">
-              <div class="movieCard">
+              <div class="movieCard" data-movie-id="8">
                 <img class="w-100" src="img/movie8.webp" alt="">
                 <h3 class="movieName">Супермозг</h3>
                 <h4 class="movieTags">мультфильм, приключения</h4>
@@ -123,6 +127,7 @@
     </div>
   </section>
 
+  <!-- Footer  -->
   <footer class="d-flex bg-dark justify-content-between px-5 py-3">
       <div class="text-light align-self-start">© 2023 Movie Park. All rights reserved</div>
       <div class="text-light align-self-end">
@@ -138,19 +143,30 @@
     </button>
   </div>
 
-  <div class="d-flex justify-content-around my-5 py-5 px-5 py-5" id="modalBox">
-    <div class="movieInfo w-50">
-        <p class="duraiton">Duraiton: <span class="fw-bold">90 minutes</span></p>
+  <!-- Modal Box With movie details -->
+  <div class="modal"></div>
+  <div class="container z-2 d-none my-1 mx-1 py-2 px-2 " id="modalBox" >
+    <div class="row">
+    <div class="col-md" id="movieInfo">
+        <p class="duration">Duraiton: <span class="fw-bold">90 minutes</span></p>
         <p class="country">Country: <span class="fw-bold">USA</span></p>
         <p class="description">Asha is a witty idealist who makes a wish so strong that it is answered by a cosmic force - a small ball of limitless energy called the Star. Together, Asha and Star face off against their most formidable enemy yet—the ruler of Rosas, King Magnifico. By protecting her loved ones, Asha proves that when the will of one respected person is tied to the magic of a star, amazing things can happen.</p>
-        
-      </div>
-    <div class="movieCard w-25">
-      <img class="w-100" src="img/movie1.webp" alt="">
-      <h3 class="movieName">Заветное желание</h3>
+        <div class="trailer text-center">
+          <iframe id="trailer" width="720vw" height="360" src="https://www.youtube.com/embed/OKSLmjLs6hw?controls=0"   loading="lazy">
+
+          </iframe>
+          <button type="button" class="btn btn-secondary" id="fullscreenBtn">Full screen</button>
+        </div>
+    </div>
+    <div class="col-md movieCard d-flex flex-column">
+      <img id="movieImg" class="w-100" src="img/movie1.webp" alt="">
+      <h3 class="movieName align-self-start">Заветное желание</h3>
       <h4 class="movieTags">мультфильм, музыка, фэнтези, комедия, приключения</h4>
+      
     </div>
   </div>
+</div>
   <script src="js/topButton.js"></script>
+  <script src="js/modalBox.js"></script>
 </body>
 </html>

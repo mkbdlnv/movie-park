@@ -1,0 +1,51 @@
+#main{
+    min-height: 100vh;
+    margin-top: 72.8px;
+    text-align: center;
+}
+
+#board{
+    height: 400px;
+    width: 400px;
+    border: solid black 2px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img{
+    width: 99px;
+    height: 99px;
+    border: solid black 0.5px;
+}
+
+#pieces{
+    width: 794px;
+    height: 200px;
+    border: solid black 0.5px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#pieces img{
+    width: 99px;
+    height: 99px;
+    border: solid red 0.5px;
+}
+
+@media only screen and (max-width: 812px) {
+    #pieces{
+        width: 400px;
+        height: 400px;
+    }
+
+    
+#pieces img{
+    width: 99px;
+    height: 99px;
+    border: solid black 0.5px;
+}
+}
