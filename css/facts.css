@@ -1,0 +1,59 @@
+#main {
+} 
+
+.first-content {
+    background-image: url('../img/main.jpg');
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+}
+
+.list-group-item {
+    color: white;
+    background-color: rgba(129, 155, 192, 0);
+}
+
+.list-group-item:hover {
+    opacity: 0.3;
+}
+
+#carousel-container {
+    display: none;
+}
+
+footer{
+    font-size: 15px;
+}
+
+footer a{
+    color: white;
+}
+
+.fa-brands{
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.fa-solid {
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.topButton{
+    font-size: 20px;
+    position: fixed;
+    bottom: 60px;
+    left: 20px;
+}
+
+.topButton button {
+    border: none;
+    background-color: #212529;
+    color: white;
+    border-radius: 50%;
+}
